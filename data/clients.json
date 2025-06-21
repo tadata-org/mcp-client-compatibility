@@ -1,0 +1,200 @@
+{
+    "version": "1.0.0",
+    "clients": [
+      {
+        "category": "AI Chat",
+        "name": "Claude.ai (Web)",
+        "website": "https://claude.ai",
+        "docsUrl": "https://support.anthropic.com/en/articles/11175166-about-custom-integrations-using-remote-mcp",
+        "features": {
+          "tools": "✅",
+          "prompts": "❔",
+          "resources": "❔"
+        },
+        "transport": {
+          "stdio": "❌",
+          "sse": "✅",
+          "streamableHttp": "✅"
+        },
+        "auth": {
+          "oauth": "✅",
+          "passthroughAuth": "✅"
+        },
+        "configuration": "UI to add URL",
+        "notes": ""
+      },
+      {
+        "category": "AI Chat",
+        "name": "Claude (Desktop)",
+        "website": "https://claude.ai/download",
+        "docsUrl": "https://support.anthropic.com/en/articles/10949351-getting-started-with-model-context-protocol-mcp-on-claude-for-desktop",
+        "features": {
+          "tools": "✅",
+          "prompts": "❔",
+          "resources": "❔"
+        },
+        "transport": {
+          "stdio": "✅",
+          "sse": "⚠️",
+          "streamableHttp": "⚠️"
+        },
+        "auth": {
+          "oauth": "❔",
+          "passthroughAuth": "❔"
+        },
+        "configuration": "Edit JSON config file",
+        "notes": "SSE/HTTP via proxy only"
+      },
+      {
+        "category": "AI Chat",
+        "name": "ChatGPT",
+        "website": "https://chatgpt.com",
+        "features": {
+          "tools": "❔",
+          "prompts": "❔",
+          "resources": "❔"
+        },
+        "transport": {
+          "stdio": "❔",
+          "sse": "❔",
+          "streamableHttp": "❔"
+        },
+        "auth": {
+          "oauth": "❔",
+          "passthroughAuth": "❔"
+        },
+        "configuration": "",
+        "notes": ""
+      },
+      {
+        "category": "AI Coding Agents",
+        "name": "Cursor",
+        "website": "https://cursor.sh",
+        "docsUrl": "https://docs.cursor.com/context/model-context-protocol",
+        "features": {
+          "tools": "✅",
+          "prompts": "❔",
+          "resources": "❌"
+        },
+        "transport": {
+          "stdio": "✅",
+          "sse": "✅",
+          "streamableHttp": "✅"
+        },
+        "auth": {
+          "oauth": "✅",
+          "passthroughAuth": "❔"
+        },
+        "configuration": "Edit JSON config file",
+        "notes": ""
+      },
+      {
+        "category": "AI Coding Agents",
+        "name": "Windsurf",
+        "website": "https://codeium.com/windsurf",
+        "docsUrl": "https://docs.windsurf.com/windsurf/cascade/mcp#model-context-protocol-mcp",
+        "features": {
+          "tools": "✅",
+          "prompts": "❌",
+          "resources": "✅"
+        },
+        "transport": {
+          "stdio": "✅",
+          "sse": "✅",
+          "streamableHttp": "❌"
+        },
+        "auth": {
+          "oauth": "❔",
+          "passthroughAuth": "❔"
+        },
+        "configuration": "Edit JSON config file",
+        "notes": ""
+      },
+      {
+        "category": "AI Coding Agents",
+        "name": "Cline",
+        "website": "https://cline.bot/",
+        "features": {
+          "tools": "❔",
+          "prompts": "❔",
+          "resources": "❔"
+        },
+        "transport": {
+          "stdio": "❔",
+          "sse": "❔",
+          "streamableHttp": "❔"
+        },
+        "auth": {
+          "oauth": "❔",
+          "passthroughAuth": "❔"
+        },
+        "configuration": "",
+        "notes": ""
+      },
+      {
+        "category": "AI Coding Agents",
+        "name": "VS Code GitHub Copilot",
+        "website": "https://github.com/features/copilot",
+        "docsUrl": "https://docs.github.com/en/copilot/customizing-copilot/using-model-context-protocol/extending-copilot-chat-with-mcp",
+        "features": {
+          "tools": "✅",
+          "prompts": "✅",
+          "resources": "✅"
+        },
+        "transport": {
+          "stdio": "✅",
+          "sse": "✅",
+          "streamableHttp": "✅"
+        },
+        "auth": {
+          "oauth": "❔",
+          "passthroughAuth": "❔"
+        },
+        "configuration": "Edit JSON config file",
+        "notes": "Supports sampling"
+      },
+      {
+        "category": "AI Coding Agents",
+        "name": "Claude Code",
+        "website": "https://claude.ai/code",
+        "docsUrl": "https://docs.anthropic.com/en/docs/claude-code/mcp",
+        "features": {
+          "tools": "✅",
+          "prompts": "✅",
+          "resources": "✅"
+        },
+        "transport": {
+          "stdio": "✅",
+          "sse": "✅",
+          "streamableHttp": "✅"
+        },
+        "auth": {
+          "oauth": "❔",
+          "passthroughAuth": "❔"
+        },
+        "configuration": "",
+        "notes": ""
+      },
+      {
+        "category": "Enterprise",
+        "name": "Google Agentspace",
+        "website": "https://cloud.google.com/agentspace",
+        "features": {
+          "tools": "❔",
+          "prompts": "❔",
+          "resources": "❔"
+        },
+        "transport": {
+          "stdio": "❔",
+          "sse": "❔",
+          "streamableHttp": "❔"
+        },
+        "auth": {
+          "oauth": "❔",
+          "passthroughAuth": "❔"
+        },
+        "configuration": "",
+        "notes": ""
+      }
+    ]
+  }
