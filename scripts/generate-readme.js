@@ -35,6 +35,8 @@ function generateReadme() {
 
 This repository tracks which MCP (Model Context Protocol) clients support which parts of the protocol.
 
+Anthropic included a compatibility table in their MCP launch docs, but it quickly became outdated. This open source repo exists so the community can help keep it fresh!
+
 ## Detailed Breakdown
 
 `;
@@ -81,7 +83,7 @@ The compatibility data is stored in \`data/clients.json\` and follows this schem
 
 \`\`\`json
 {
-  "category": "AI Chat|AI Coding Agents|Enterprise",
+  "category": "AI Chat|AI Coding Agents",
   "name": "string", 
   "website": "string",
   "docsUrl": "string",
@@ -103,8 +105,6 @@ The compatibility data is stored in \`data/clients.json\` and follows this schem
   "notes": "string"
 }
 \`\`\`
-
----
 
 *This table is automatically generated from [data/clients.json](data/clients.json). Last updated: ${lastUpdated}*
 `;
