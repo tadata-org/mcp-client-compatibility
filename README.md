@@ -1,8 +1,10 @@
 # MCP Client Compatibility
 
-> **Last updated:** June 20, 2025
+> **Last updated:** June 24, 2025
 
 This repository tracks which MCP (Model Context Protocol) clients support which parts of the protocol.
+
+Anthropic included a compatibility table in their MCP launch docs, but it quickly became outdated. This open source repo exists so the community can help keep it fresh!
 
 ## Detailed Breakdown
 
@@ -11,8 +13,8 @@ This repository tracks which MCP (Model Context Protocol) clients support which 
 | Client | Docs | Tools | Prompts | Resources | STDIO | SSE | HTTP | OAuth | Pass-through | Notes |
 |--------|------|-------|---------|-----------|-------|-----|------|-------|-------------|--------|
 | [Claude.ai (Web)](https://claude.ai) | [Docs](https://support.anthropic.com/en/articles/11175166-about-custom-integrations-using-remote-mcp) | ✅ | ❔ | ❔ | ❌ | ✅ | ✅ | ✅ | ✅ |  |
-| [Claude (Desktop)](https://claude.ai/download) | [Docs](https://support.anthropic.com/en/articles/10949351-getting-started-with-model-context-protocol-mcp-on-claude-for-desktop) | ✅ | ❔ | ❔ | ✅ | ⚠️ | ⚠️ | ❔ | ❔ | SSE/HTTP via proxy only |
-| [ChatGPT](https://chatgpt.com) |  | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ |  |
+| [Claude Desktop Remote MCP via Integrations](https://claude.ai/download) | [Docs](https://support.anthropic.com/en/articles/11503834-building-custom-integrations-via-remote-mcp-servers) | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | Only available on Pro, Max, Teams, and Enterprise tiers. Configure via Settings > Integrations. |
+| [Claude Desktop Local MCP via Config](https://claude.ai/download) | [Docs](https://modelcontextprotocol.io/quickstart/user) | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ❌ | ❔ | SSE/HTTP via proxy only. Configure via Claude Settings > Developer > edit claude_desktop_config.json config. Claude Desktop won't connect to remote servers configured via claude_desktop_config.json. |
 
 ### AI Coding Agents
 
@@ -20,15 +22,8 @@ This repository tracks which MCP (Model Context Protocol) clients support which 
 |--------|------|-------|---------|-----------|-------|-----|------|-------|-------------|--------|
 | [Cursor](https://cursor.sh) | [Docs](https://docs.cursor.com/context/model-context-protocol) | ✅ | ❔ | ❌ | ✅ | ✅ | ✅ | ✅ | ❔ |  |
 | [Windsurf](https://codeium.com/windsurf) | [Docs](https://docs.windsurf.com/windsurf/cascade/mcp#model-context-protocol-mcp) | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❔ | ❔ |  |
-| [Cline](https://cline.bot/) |  | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ |  |
 | [VS Code GitHub Copilot](https://github.com/features/copilot) | [Docs](https://docs.github.com/en/copilot/customizing-copilot/using-model-context-protocol/extending-copilot-chat-with-mcp) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❔ | ❔ | Supports sampling |
 | [Claude Code](https://claude.ai/code) | [Docs](https://docs.anthropic.com/en/docs/claude-code/mcp) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❔ | ❔ |  |
-
-### Enterprise
-
-| Client | Docs | Tools | Prompts | Resources | STDIO | SSE | HTTP | OAuth | Pass-through | Notes |
-|--------|------|-------|---------|-----------|-------|-----|------|-------|-------------|--------|
-| [Google Agentspace](https://cloud.google.com/agentspace) |  | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ | ❔ |  |
 
 ## Legend
 
@@ -53,7 +48,7 @@ The compatibility data is stored in `data/clients.json` and follows this schema:
 
 ```json
 {
-  "category": "AI Chat|AI Coding Agents|Enterprise",
+  "category": "AI Chat|AI Coding Agents",
   "name": "string", 
   "website": "string",
   "docsUrl": "string",
@@ -76,6 +71,4 @@ The compatibility data is stored in `data/clients.json` and follows this schema:
 }
 ```
 
----
-
-*This table is automatically generated from [data/clients.json](data/clients.json). Last updated: June 20, 2025*
+*This table is automatically generated from [data/clients.json](data/clients.json). Last updated: June 24, 2025*

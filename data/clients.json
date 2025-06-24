@@ -25,13 +25,35 @@
       },
       {
         "category": "AI Chat",
-        "name": "Claude (Desktop)",
+        "name": "Claude Desktop Remote MCP via Integrations",
         "website": "https://claude.ai/download",
-        "docsUrl": "https://support.anthropic.com/en/articles/10949351-getting-started-with-model-context-protocol-mcp-on-claude-for-desktop",
+        "docsUrl": "https://support.anthropic.com/en/articles/11503834-building-custom-integrations-via-remote-mcp-servers",
         "features": {
           "tools": "✅",
-          "prompts": "❔",
-          "resources": "❔"
+          "prompts": "✅",
+          "resources": "✅"
+        },
+        "transport": {
+          "stdio": "❌",
+          "sse": "✅",
+          "streamableHttp": "✅"
+        },
+        "auth": {
+          "oauth": "✅",
+          "passthroughAuth": "✅"
+        },
+        "configuration": "Provide URL",
+        "notes": "Only available on Pro, Max, Teams, and Enterprise tiers. Configure via Settings > Integrations."
+      },
+      {
+        "category": "AI Chat",
+        "name": "Claude Desktop Local MCP via Config",
+        "website": "https://claude.ai/download",
+        "docsUrl": "https://modelcontextprotocol.io/quickstart/user",
+        "features": {
+          "tools": "✅",
+          "prompts": "✅",
+          "resources": "✅"
         },
         "transport": {
           "stdio": "✅",
@@ -39,32 +61,11 @@
           "streamableHttp": "⚠️"
         },
         "auth": {
-          "oauth": "❔",
+          "oauth": "❌",
           "passthroughAuth": "❔"
         },
-        "configuration": "Edit JSON config file",
-        "notes": "SSE/HTTP via proxy only"
-      },
-      {
-        "category": "AI Chat",
-        "name": "ChatGPT",
-        "website": "https://chatgpt.com",
-        "features": {
-          "tools": "❔",
-          "prompts": "❔",
-          "resources": "❔"
-        },
-        "transport": {
-          "stdio": "❔",
-          "sse": "❔",
-          "streamableHttp": "❔"
-        },
-        "auth": {
-          "oauth": "❔",
-          "passthroughAuth": "❔"
-        },
-        "configuration": "",
-        "notes": ""
+        "configuration": "Configure via claude_desktop_config.json",
+        "notes": "SSE/HTTP via proxy only. Configure via Claude Settings > Developer > edit claude_desktop_config.json config. Claude Desktop won't connect to remote servers configured via claude_desktop_config.json."
       },
       {
         "category": "AI Coding Agents",
@@ -112,27 +113,6 @@
       },
       {
         "category": "AI Coding Agents",
-        "name": "Cline",
-        "website": "https://cline.bot/",
-        "features": {
-          "tools": "❔",
-          "prompts": "❔",
-          "resources": "❔"
-        },
-        "transport": {
-          "stdio": "❔",
-          "sse": "❔",
-          "streamableHttp": "❔"
-        },
-        "auth": {
-          "oauth": "❔",
-          "passthroughAuth": "❔"
-        },
-        "configuration": "",
-        "notes": ""
-      },
-      {
-        "category": "AI Coding Agents",
         "name": "VS Code GitHub Copilot",
         "website": "https://github.com/features/copilot",
         "docsUrl": "https://docs.github.com/en/copilot/customizing-copilot/using-model-context-protocol/extending-copilot-chat-with-mcp",
@@ -167,27 +147,6 @@
           "stdio": "✅",
           "sse": "✅",
           "streamableHttp": "✅"
-        },
-        "auth": {
-          "oauth": "❔",
-          "passthroughAuth": "❔"
-        },
-        "configuration": "",
-        "notes": ""
-      },
-      {
-        "category": "Enterprise",
-        "name": "Google Agentspace",
-        "website": "https://cloud.google.com/agentspace",
-        "features": {
-          "tools": "❔",
-          "prompts": "❔",
-          "resources": "❔"
-        },
-        "transport": {
-          "stdio": "❔",
-          "sse": "❔",
-          "streamableHttp": "❔"
         },
         "auth": {
           "oauth": "❔",
